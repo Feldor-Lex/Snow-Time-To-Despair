@@ -18,18 +18,7 @@ public class runSnowstorm{
 	
 
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	/**
 	 * 
