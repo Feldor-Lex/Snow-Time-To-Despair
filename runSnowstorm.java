@@ -30,6 +30,12 @@ public class runSnowstorm{
 		UI.setDivider(0);//Sets it so that there is no graphics output region - ONLY
 		runSnowstorm KG3 = new runSnowstorm();
 		KG3.initialize();//Sets up all of the data about the current environment.
+		Zone testZone = new Zone();
+		UI.println(testZone.toString());
+		
+		
+		
+		
 		//while(true) {
 		//	KG3.tick();
 		//}
