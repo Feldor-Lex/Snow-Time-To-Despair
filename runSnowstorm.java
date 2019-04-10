@@ -11,7 +11,7 @@ public class runSnowstorm{
 	
 	//FIELDS
 	private ArrayList<Zone> Zones = new ArrayList<>();
-	private String displayMode = "Map"; //Current rendering mode. Can be "Map", "Profiles", "Info"
+	private String displayMode = "Map"; //Current rendering mode. Can be "Map", "Profiles", "Info". Defaults to "Map"
 	
 	
 	public void initialize() {//Loads any saved data for the current map
