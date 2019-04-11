@@ -13,11 +13,12 @@ public class Zone {
 	private ArrayList<Double> yPoints = new ArrayList<>();
 	
 	
+
+	
 	/*
 	 * Turns a zone into a string with all data present so that it can be saved and loaded.
 	 * Returns as a string.
 	 */
-	
 	public String toString() {//A custom toString! Why? One, so I can code it by hand. Two, so I know everything's in the right order and format.
 		xPoints.add(1.4);//Test value
 		xPoints.add(2.0);//Test Value

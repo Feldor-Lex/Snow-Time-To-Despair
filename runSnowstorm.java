@@ -12,6 +12,8 @@ public class runSnowstorm{
 	//FIELDS
 	private ArrayList<Zone> Zones = new ArrayList<>();
 	private String displayMode = "Map"; //Current rendering mode. Can be "Map", "Profiles", "Info". Defaults to "Map"
+	private double prevMouseX = 0;//Keeps track of the last recorded position of the mouse --
+	private double prevMouseY = 0;//-- used for panning across the map, primarily. Initialized to 0 to avoid accidental errors.
 	
 	
 	public void initialize() {//Loads any saved data for the current map
@@ -30,15 +32,36 @@ public class runSnowstorm{
 
 	}
 
+	//###USER INTERFACE - GUI SETUP, MOUSE SELECTION AND MOUSE PANNING###
+	/*
+	 * Sets up the GUI, enables mouse listeners and similar.
+	 * Only needs to be called once.
+	 */
+	public void setupGUI() {
+		UI.initialise();
+		UI.setMouseMotionListener(this::doMouse);
+		UI.setDivider(0);//Sets it so that there is no graphics output region - ONLY
+	}
+	
+	/*
+	 * Handles various mouse events. Clicking, panning, etc.
+	 */
+	public void doMouse(String action, double currentmouseX, double currentmouseY ) {
+		
+		
+		
+	}
+	
 	
 	/**
 	 * Main method. At present, it initializes the UI, configures the UI so that it displays only the graphics pane, then 
 	 * runs a handful of test functions.
 	 */
 	public static void main(String[] args) {
-		UI.initialise();
-		UI.setDivider(0);//Sets it so that there is no graphics output region - ONLY
 		runSnowstorm KG3 = new runSnowstorm();
+		KG3.setupGUI();//Sets up the GUI, mouselisteners, graphics pane, etc.
+		
+		
 		KG3.initialize();//Sets up all of the data about the current environment.
 		
 		Zone testZone = new Zone();
