@@ -4,7 +4,7 @@ import java.util.*;
 
 public class baseSystem {
 	//FIELDS
-	private String name; //The name of the system in question, eg: 
+	private String name; //The name of the system in question, eg: Water purification, Heating, AI system, Oxygen, Food
 	
 	
 	

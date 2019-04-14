@@ -20,8 +20,8 @@ public class Zone {
 	 * Returns as a string.
 	 */
 	public String toString() {//A custom toString! Why? One, so I can code it by hand. Two, so I know everything's in the right order and format.
-		xPoints.add(1.4);//Test value
-		xPoints.add(2.0);//Test Value
+		xPoints.add(1.4);//Test value, TEMPORARY
+		xPoints.add(2.0);//Test Value, TEMPORARY
 		
 		return(//Formats the zone into several different parts by using | as a delimeter,
 				xPoints.toString()//Prints out the X coordinates in the format of [1.5, 2.8]

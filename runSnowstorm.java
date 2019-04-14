@@ -7,13 +7,18 @@ public class runSnowstorm{
 	//CONSTANTS
 	public static final boolean isInEditMode=false;//Whether or not the simulation is in active use mode, or being tweaked.
 	public static final double passiveStormDamageMult = 1;
-
+	public static final String saveData="snowstorm.txt";
 	
-	//FIELDS
+	//FIELDS: GENERAL
 	private ArrayList<Zone> Zones = new ArrayList<>();
+	private ArrayList<Wall> Walls = new ArrayList<>();
 	private String displayMode = "Map"; //Current rendering mode. Can be "Map", "Profiles", "Info". Defaults to "Map"
 	private double prevMouseX = 0;//Keeps track of the last recorded position of the mouse --
 	private double prevMouseY = 0;//-- used for panning across the map, primarily. Initialized to 0 to avoid accidental errors.
+	//FIELDS: CAMERA PANNING
+	private double xOffset = 0;//How far to the left or the right from the "default" the display is.
+	private double yOffset = 0;//How far up or down from the "default" the display is.
+	private double zoomModifier = 1;//Whether or not the map is zoomed in or zoomed out from the "default".
 	
 	
 	public void initialize() {//Loads any saved data for the current map
