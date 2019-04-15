@@ -40,7 +40,7 @@ public class Wall{
 	 */
 	public void render(double xOffset, double yOffset, double zoomMult) {
 		UI.setLineWidth(WALL_WIDTH);
-		UI.drawLine(x1, y1, x2, y2);
+		UI.drawLine((x1+xOffset)*zoomMult, (y1+yOffset)*zoomMult, (x2+xOffset)*zoomMult, (y2+yOffset)*zoomMult);
 	}
 	
 	/*

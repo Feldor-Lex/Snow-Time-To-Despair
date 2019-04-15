@@ -32,8 +32,11 @@ public class runSnowstorm{
  * Draws the graphical map once everything else is done. Must be called after ANY changes, even panning slightly.
  */
 	public void draw() {
-		
-		
+		for(Wall w : Walls) {//Renders every wall in the arraylist of walls.
+			w.render(xOffset, yOffset, zoomModifier);}
+		for(Zone z : Zones) {
+			
+		}
 
 	}
 

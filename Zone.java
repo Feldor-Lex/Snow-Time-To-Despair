@@ -13,7 +13,16 @@ public class Zone {
 	private ArrayList<Double> yPoints = new ArrayList<>();
 	
 	
-
+/*
+ * Renders the zone in question! Accepts the following inputs:
+ * X offset, Y offset, Zoom multiples
+ */
+	public void render(double xOffset, double yOffset, double zoomMult) {
+		UI.setLineWidth(0);
+		//#UNFINISHED!
+	}
+	
+	
 	
 	/*
 	 * Turns a zone into a string with all data present so that it can be saved and loaded.
